@@ -1,0 +1,23 @@
+Implementation : 
+
+Indexer.py
+(This file is used to create a inverted index of documents)
+- I first create a inverted list of documents mapping words 
+  to documents with their term frequency for that word.For this
+  I use a dictionary of dictionary to store the words and documents 
+  along with their term frequencies. While entering this information 
+  I skip the words that are entirely digits.
+
+BM25.py
+(this File performs the task of calculating bm25 scores for all the 
+ Documents and writes those documents in a file)
+- First I read the data from the indeer.out file and enter this 
+  information again into a dictionary of a dictionary data structure
+- Next step is to calculate the length of each documents and the cumulative 
+  length of all documents.
+- Then for every query, a BM25 score is calculated for each document relating 
+  to that query and again stored in a dictionary.
+- The documents are Sorted according to the score and returned as the output
+
+
+
